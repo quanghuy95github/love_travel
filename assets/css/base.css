@@ -25,6 +25,18 @@ p, h1, h2, h3, h4, h5, h6, ul {
     padding: 0px;
 }
 
+.mt-20 {
+    margin-top: 20px !important;
+}
+
+.mt-30 {
+    margin-top: 30px !important;
+}
+
+.mt-64 {
+    margin-top: 64px !important;
+}
+
 .btn {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -42,4 +54,12 @@ p, h1, h2, h3, h4, h5, h6, ul {
 
 .btn.btn--info {
     background-color: #1bbc9b;
+}
+
+.btn.btn--normal {
+    background-color: var(--component-color);
+}
+
+.btn.btn--sm {
+    padding: 8px 12px;
 }
