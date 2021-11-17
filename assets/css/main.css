@@ -227,6 +227,11 @@
 
 .main-nav__item {
     font-size: 1.6rem;
+    position: relative;
+}
+
+.main-nav__item:hover > .sub-menu {
+    display: block;
 }
 
 .main-nav__item::after {
@@ -238,6 +243,70 @@
 
 .main-nav__item:last-child::after {
     display: none;
+}
+
+.sub-menu {
+    display: none;
+    background-color: #ffffff;
+    list-style: none;
+    width: 190px;
+    position: absolute;
+    top: calc(100% + 26px);
+    left: -18px;
+    z-index: 1;
+    box-shadow: 0 2px 5px #f1f1f1;
+}
+
+.sub-menu:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 26px;
+    position: absolute;
+    top: -26px;
+    left: 0;
+}
+
+.sub-menu__item {
+    border-top: 1px solid #f1f1f1;
+    position: relative;
+}
+
+.sub-menu__link {
+    display: block;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: var(--text-heading-color);
+}
+
+.sub-menu__link--has-sub:after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    content: "";
+    display: block;
+    border: 5px solid;
+    border-color: transparent transparent transparent var(--component-color);
+}
+
+.sub-menu__item:hover > .sub-menu {
+    display: block;
+}
+
+.sub-menu .sub-menu {
+    display: none;
+    left: calc(100% + 20px);
+    top: -1px;
+}
+
+.sub-menu .sub-menu:before {
+    width: 20px;
+    height: 100%;
+    top: 0;
+    left: -20px;
 }
 
 .main-nav__link {
@@ -465,6 +534,10 @@
 
 .advanced-search .search__item {
     margin-top: 20px;
+}
+
+.packages-request.packages__item-body--active {
+    display: block;
 }
 
 /* CONTAINER */
@@ -788,13 +861,36 @@
     margin-left: 0px;
 }
 
-.contact {
+.packages-request {
+    display: none;
     padding: 10px 20px 40px;
     background-color: var(--component-color);
 }
 
-.contact .search__item {
+.packages-request .search__item {
     margin-top: 20px;
+}
+
+.packages-contact {
+    background-color: var(--component-color);
+    padding: 20px 0;
+    display: none;
+}
+
+.packages-contact.packages__item-body--active {
+    display: none;
+}
+
+.packages-contact-item {
+    text-align: center;
+}
+
+.packages-contact-item h1 {
+    margin: 10px 0;
+    color: var(--white-color);
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 3rem;
 }
 
 .btn-send {
@@ -966,7 +1062,7 @@
     justify-content: space-between;
 }
 
-.footer__bottom {
+.footer__bottom-text {
     padding: 15px 0;
     font-size: 1.4rem;
     line-height: 1.4rem;

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
     <div class="app">
@@ -19,7 +20,7 @@
             <!--header top-->
             <div class="header-top">
                 <div class="grid wide">
-                    <div class="top-nav">
+                    <div class="top-nav hide-on-tablet">
                         <ul class="top-nav__list">
                             <li class="top-nav__item">
                                 <a href="" class="top-nav__link">
@@ -113,7 +114,7 @@
             <div class="main-nav">
                 <div class="grid wide">
                     <div class="row">
-                        <div class="col l-12">
+                        <div class="col l-12 m-0 c-0">
                             <div class="main-nav-content">
                                 <div class="header-logo">
                                     <a href="" class="header-logo__link">
@@ -126,21 +127,104 @@
                                     </li>
                                     <li class="main-nav__item">
                                         <a href="" class="main-nav__link">Packages</a>
+                                        <ul class="sub-menu">
+                                            <li class="sub-menu__item">
+                                                <a href="" class="sub-menu__link">Search</a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a href="" class="sub-menu__link">Single Package</a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a href="" class="sub-menu__link">Destination</a>
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li class="main-nav__item">
                                         <a href="" class="main-nav__link">Shop</a>
+                                        <ul class="sub-menu">
+                                            <li class="sub-menu__item">
+                                                <a href="" class="sub-menu__link">Shop</a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a href="" class="sub-menu__link">Cart</a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a href="" class="sub-menu__link">Checkout</a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a href="" class="sub-menu__link">My Account</a>
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li class="main-nav__item">
                                         <a href="" class="main-nav__link">About us</a>
                                     </li>
                                     <li class="main-nav__item">
                                         <a href="" class="main-nav__link">Pages</a>
+                                        <ul class="sub-menu">
+                                            <li class="sub-menu__item">
+                                                <a href="" class="sub-menu__link">Best Destinations</a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a href="" class="sub-menu__link">Staff</a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a href="" class="sub-menu__link">Services</a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a href="" class="sub-menu__link">Prices</a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a href="" class="sub-menu__link">Faq</a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a href="" class="sub-menu__link sub-menu__link--has-sub">Contact 1</a>
+                                                <ul class="sub-menu">
+                                                    <li class="sub-menu__item">
+                                                        <a href="" class="sub-menu__link">Contact 1</a>
+                                                    </li>
+                                                    <li class="sub-menu__item">
+                                                        <a href="" class="sub-menu__link">Contact 2</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a href="" class="sub-menu__link">Coming Soon</a>
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li class="main-nav__item">
                                         <a href="" class="main-nav__link">News</a>
+                                        <ul class="sub-menu">
+                                            <li class="sub-menu__item">
+                                                <a href="" class="sub-menu__link">Archive</a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a href="" class="sub-menu__link sub-menu__link--has-sub">Single Post</a>
+                                                <ul class="sub-menu">
+                                                    <li class="sub-menu__item">
+                                                        <a href="" class="sub-menu__link">Full Width</a>
+                                                    </li>
+                                                    <li class="sub-menu__item">
+                                                        <a href="" class="sub-menu__link">Right Sidebar</a>
+                                                    </li>
+                                                    <li class="sub-menu__item">
+                                                        <a href="" class="sub-menu__link">Left Sidebar</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li class="main-nav__item">
                                         <a href="" class="main-nav__link">Contact</a>
+                                        <ul class="sub-menu">
+                                            <li class="sub-menu__item">
+                                                <a href="" class="sub-menu__link">Contact 1</a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a href="" class="sub-menu__link">Contact 2</a>
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li class="main-nav__item">
                                         <a href="" class="main-nav__link-button">Book Now</a>
@@ -191,12 +275,12 @@
                         <div class="quick-search search--active">
                             <form action="" class="quick-search-form">
                                 <div class="row">
-                                    <div class="col l-3">
+                                    <div class="col l-3 m-12 c-12 search__item-col">
                                         <div class="search__item">
                                             <input type="text" class="search__input" placeholder="Insert Keyword">
                                         </div>
                                     </div>
-                                    <div class="col l-3">
+                                    <div class="col l-3 m-12 c-12 search__item-col">
                                         <div class="search__item">
                                             <select name="" id="" class="search__section">
                                                 <option value="0">All Destinations</option>
@@ -210,7 +294,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col l-3">
+                                    <div class="col l-3 m-12 c-12 search__item-col">
                                         <div class="search__item">
                                             <select name="" id="" class="search__section">
                                                 <option value="0">All Typologies</option>
@@ -221,7 +305,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col l-3">
+                                    <div class="col l-3 m-12 c-12 search__item-col">
                                         <div class="search__item">
                                             <a href="" class="btn btn--info search__btn">Search</a>
                                         </div>
@@ -231,15 +315,15 @@
                         </div>
 
                         <!--advanced search-->
-                        <div class="advanced-search search--active">
+                        <div class="advanced-search">
                             <form action="" class="advanced-search-form">
                                 <div class="row">
-                                    <div class="col l-3">
+                                    <div class="col l-3 m-12 c-12">
                                         <div class="search__item">
                                             <input type="text" class="search__input" placeholder="Insert Keyword">
                                         </div>
                                     </div>
-                                    <div class="col l-3">
+                                    <div class="col l-3 m-12 c-12">
                                         <div class="search__item">
                                             <select name="" id="" class="search__section">
                                                 <option value="0">All Destinations</option>
@@ -253,7 +337,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col l-3">
+                                    <div class="col l-3 m-12 c-12">
                                         <div class="search__item">
                                             <select name="" id="" class="search__section">
                                                 <option value="0">All Typologies</option>
@@ -264,7 +348,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col l-3">
+                                    <div class="col l-3 m-12 c-12">
                                         <div class="search__item">
                                             <select name="" id="" class="search__section">
                                                 <option value="0">All Durations</option>
@@ -277,7 +361,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col l-3">
+                                    <div class="col l-3 m-12 c-12">
                                         <div class="search__item">
                                             <select name="" id="" class="search__section">
                                                 <option value="0">All Difficulty</option>
@@ -287,7 +371,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col l-3">
+                                    <div class="col l-3 m-12 c-12">
                                         <div class="search__item">
                                             <select name="" id="" class="search__section">
                                                 <option value="0">All Min Age</option>
@@ -297,7 +381,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col l-6">
+                                    <div class="col l-6 m-12 c-12">
                                         <div class="search__item">
                                             <a href="" class="btn btn--info search__btn">Search</a>
                                         </div>
@@ -315,7 +399,7 @@
             <!--top promotion-->
             <div class="top-promotion section">
                 <div class="grid wide">
-                    <div class="section-top mt-64">
+                    <div class="section-top mt-64 promotion-section-top">
                         <h1 class="section-top__heading">Top Promotions</h1>
                         <h3 class="section-top__label">Best Travel Packages Available</h3>
                         <div class="section-top__separation">
@@ -536,7 +620,7 @@
                     </div>
                     <div class="section-body">
                         <div class="row large-gutter">
-                            <div class="col l-3 top-promotion__item-wrap">
+                            <div class="col l-3 m-12 c-12 top-promotion__item-wrap">
                                 <div class="top-promotion__item">
                                     <div class="top-promotion__img-wrap">
                                         <img src="./assets/images/destination-10.jpg" alt="" class="top-promotion__img">
@@ -546,7 +630,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col l-3 top-promotion__item-wrap">
+                            <div class="col l-3 m-12 c-12 top-promotion__item-wrap">
                                 <div class="top-promotion__item">
                                     <div class="top-promotion__img-wrap">
                                         <img src="./assets/images/destination-6.jpg" alt="" class="top-promotion__img">
@@ -556,7 +640,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col l-3 top-promotion__item-wrap">
+                            <div class="col l-3 m-12 c-12 top-promotion__item-wrap">
                                 <div class="top-promotion__item">
                                     <div class="top-promotion__img-wrap">
                                         <img src="./assets/images/destination-20.jpg" alt="" class="top-promotion__img">
@@ -566,7 +650,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col l-3 top-promotion__item-wrap">
+                            <div class="col l-3 m-12 c-12 top-promotion__item-wrap">
                                 <div class="top-promotion__item">
                                     <div class="top-promotion__img-wrap">
                                         <img src="./assets/images/destination-7.jpg" alt="" class="top-promotion__img">
@@ -586,7 +670,7 @@
                 <div class="travel-type__layer">
                     <div class="grid wide travel-type__content">
                         <div class="row">
-                            <div class="col l-3 travel-type__item-col">
+                            <div class="col l-3 m-12 c-12 travel-type__item-col">
                                 <div class="travel-type__item">
                                     <h1 class="travel-type__count">75</h1>
                                     <div class="travel-type__link">
@@ -594,7 +678,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col l-3 travel-type__item-col">
+                            <div class="col l-3 m-12 c-12 travel-type__item-col">
                                 <div class="travel-type__item">
                                     <h1 class="travel-type__count">149</h1>
                                     <div class="travel-type__link">
@@ -602,7 +686,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col l-3 travel-type__item-col">
+                            <div class="col l-3 m-12 c-12 travel-type__item-col">
                                 <div class="travel-type__item">
                                     <h1 class="travel-type__count">32</h1>
                                     <div class="travel-type__link">
@@ -610,7 +694,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col l-3 travel-type__item-col">
+                            <div class="col l-3 m-12 c-12 travel-type__item-col">
                                 <div class="travel-type__item">
                                     <h1 class="travel-type__count">24</h1>
                                     <div class="travel-type__link">
@@ -634,8 +718,8 @@
                         </div>
                     </div>
                     <div class="section-body packages-body">
-                        <div class="row">
-                            <div class="col l-3 packages-body-col">
+                        <div class="row large-gutter">
+                            <div class="col l-3 m-12 c-12 packages-body-col">
                                 <div class="packages__item">
                                     <ul class="search-tab__list">
                                         <li class="search-tab__item search-tab__list--active">
@@ -650,49 +734,65 @@
                                             </a>
                                         </li>
                                     </ul>
-                                    <div class="contact">
-                                        <div class="row">
-                                            <div class="col l-12">
-                                                <div class="search__item">
-                                                    <input type="text" class="search__input" placeholder="Name">
+                                    <div class="packages__item-body">
+                                        <div class="packages-request packages__item-body--active">
+                                            <div class="row">
+                                                <div class="col l-12 m-12 c-12">
+                                                    <div class="search__item">
+                                                        <input type="text" class="search__input" placeholder="Name">
+                                                    </div>
+                                                </div>
+                                                <div class="col l-12 m-12 c-12">
+                                                    <div class="search__item">
+                                                        <input type="email" class="search__input" placeholder="Email">
+                                                    </div>
+                                                </div>
+                                                <div class="col l-12 m-12 c-12">
+                                                    <div class="search__item">
+                                                        <input type="text" class="search__input" placeholder="Guests">
+                                                    </div>
+                                                </div>
+                                                <div class="col l-12 m-12 c-12">
+                                                    <div class="search__item">
+                                                        <select name="" id="" class="search__section">
+                                                            <option value="0">Select Destination</option>
+                                                            <option value="1">London</option>
+                                                            <option value="2">Rome</option>
+                                                            <option value="3">New Delhi</option>
+                                                            <option value="2">Dubai</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col l-12 m-12 c-12">
+                                                    <div class="search__item">
+                                                        <textarea type="text" rows="7" class="search__input" placeholder="Message"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col l-12 m-12 c-12">
+                                                    <div class="search__item mt-30">
+                                                        <a href="" class="btn btn--info search__btn btn-send">Send</a>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col l-12">
-                                                <div class="search__item">
-                                                    <input type="email" class="search__input" placeholder="Email">
+                                        </div>
+                                        <div class="packages-contact">
+                                            <div class="row">
+                                                <div class="col l-12 m-12 c-12">
+                                                    <div class="packages-contact-item">
+                                                        <h1>+51 2383484</h1>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col l-12">
-                                                <div class="search__item">
-                                                    <input type="text" class="search__input" placeholder="Guests">
-                                                </div>
-                                            </div>
-                                            <div class="col l-12">
-                                                <div class="search__item">
-                                                    <select name="" id="" class="search__section">
-                                                        <option value="0">Select Destination</option>
-                                                        <option value="1">London</option>
-                                                        <option value="2">Rome</option>
-                                                        <option value="3">New Delhi</option>
-                                                        <option value="2">Dubai</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col l-12">
-                                                <div class="search__item">
-                                                    <textarea type="text" rows="7" class="search__input" placeholder="Message"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="col l-12">
-                                                <div class="search__item mt-30">
-                                                    <a href="" class="btn btn--info search__btn btn-send">Send</a>
+                                                <div class="col l-12 m-12 c-12">
+                                                    <div class="packages-contact-item">
+                                                        <h1>CALL US</h1>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col l-9 packages-body-col">
+                            <div class="col l-9 m-12 c-12 packages-body-col">
                                 <div class="packages__item">
                                     <div class="packages__item__space">
                                         <div class="packages__item-content">
@@ -710,7 +810,7 @@
                                                     <span class="packages__price">1500</span>
                                                     <span class="packages__price-unit">$</span>
                                                 </a>
-                                                <a href="" class="btn packages__btn mt-20">Details</a>
+                                                <a href="" class="btn packages__btn mt-20 hide-on-tablet">Details</a>
                                             </div>
                                         </div>
                                     </div>
@@ -732,7 +832,7 @@
                                                     <span class="packages__price">1500</span>
                                                     <span class="packages__price-unit">$</span>
                                                 </a>
-                                                <a href="" class="btn packages__btn mt-20">Details</a>
+                                                <a href="" class="btn packages__btn mt-20 hide-on-tablet">Details</a>
                                             </div>
                                         </div>
                                     </div>
@@ -754,7 +854,7 @@
                                                     <span class="packages__price">1500</span>
                                                     <span class="packages__price-unit">$</span>
                                                 </a>
-                                                <a href="" class="btn packages__btn mt-20">Details</a>
+                                                <a href="" class="btn packages__btn mt-20 hide-on-tablet">Details</a>
                                             </div>
                                         </div>
                                     </div>
@@ -769,7 +869,7 @@
             <div class="footer__top">
                 <div class="grid wide">
                     <div class="row">
-                        <div class="col l-4">
+                        <div class="col l-4 m-12 c-12 footer__item-col">
                             <div class="footer__item">
                                 <h3 class="footer__heading">Phone Support</h3>
                                 <div class="footer__desc">2h Hours a day</div>
@@ -778,7 +878,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col l-4">
+                        <div class="col l-4 m-12 c-12 footer__item-col">
                             <div class="footer__item">
                                 <h3 class="footer__heading">Connect With Us</h3>
                                 <div class="footer__desc">SOCIAL MEDIA CHANNELS</div>
@@ -801,7 +901,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col l-4">
+                        <div class="col l-4 m-12 c-12 footer__item-col">
                             <div class="footer__item">
                                 <h3 class="footer__heading">Newsletter</h3>
                                 <div class="footer__desc">SIGN UP FOR SPECIAL OFFERS</div>
@@ -821,7 +921,7 @@
             </div>
             <div class="grid wide">
                 <div class="row">
-                    <div class="col l-12">
+                    <div class="col l-12 m-12 c-12">
                         <div class="footer__bottom">
                             <p class="footer__bottom-text">© Copyright 2018 nicdark.com</p>
                             <p class="footer__bottom-text">Best Travel WordPress Theme</p>
