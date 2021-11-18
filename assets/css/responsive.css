@@ -7,12 +7,19 @@
 
 /* PC: width >= 1024px */
 @media only screen and (max-width: 64em) {
+    :root {
+        --header-main-nav: 114px;
+    }
     .hide-on-tablet {
         display: none;
     }
 
+    .search__item-col:nth-child(n+2) {
+        margin-top: 20px;
+    }
+
     .promotion-section-top {
-        margin-top: 300px;
+        margin-top: 240px;
     }
 
     .packages-body-col:nth-child(n+1) {
@@ -95,7 +102,17 @@
     }
 
     .header-search-wrap {
-        bottom: calc(0% - 60px);
+        bottom: calc(0% - 120px);
+    }
+
+    .main-nav-content {
+        flex-direction: column;
+        padding: 20px 0;
+        justify-content: space-between;
+    }
+
+    .nav-mobile__icon-wrap {
+        display: block;
     }
 }
 
@@ -119,7 +136,7 @@
     }
 
     .header-search-wrap {
-        bottom: calc(0% - 260px);
+        bottom: calc(0% - 320px);
     }
 
     .promotion-section-top {
